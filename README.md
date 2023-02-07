@@ -6,3 +6,5 @@ Install aws cli: https://docs.aws.amazon.com/cli/latest/userguide/getting-starte
 Step2:
 Install terraform: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 ==>Build Infrastructure (include profile with User Name of IAM user)
+
+- Add variable: -var "<instance>=<value>"
