@@ -22,3 +22,19 @@ resource "aws_instance" "app_server" {
     Name = var.instance_name
   }
 }
+
+# Create a new AWS Linux Instance
+resource "aws_lightsail_instance" "first_magento_instance" {
+  name              = "custom_instance"
+  availability_zone = "ap-south-1a"
+  blueprint_id      = "amazon_linux_2"
+  bundle_id         = "micro_2_1"
+  tags = {
+    dv = "dv2uang"
+  }
+}
+resource "aws_lightsail_certificate" "dv2uang" {
+  name                      = "dv2uang"
+  domain_name               = "1st-lightsail.dv2uang"
+  subject_alternative_names = ["www.1st-lightsail.dv2uang"]
+}
