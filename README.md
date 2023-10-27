@@ -11,5 +11,5 @@ Install terraform: https://developer.hashicorp.com/terraform/tutorials/aws-get-s
 
 ==> Build Infrastructure (include profile with User Name of IAM user): terraform apply (add --auto-apply for auto accept)
 
-- Add variable: -var "<key>=<value>"
-- Add variable via file: -var-file="<filename>"
+- Add variable: -var "key=value"
+- Add variable via file: -var-file="filename"
