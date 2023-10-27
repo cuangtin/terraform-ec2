@@ -13,3 +13,5 @@ Install terraform: https://developer.hashicorp.com/terraform/tutorials/aws-get-s
 
 - Add variable: -var "key=value"
 - Add variable via file: -var-file="filename"
+
+# Remember destroy all resources over-all: terraform destroy
